@@ -4,7 +4,7 @@ use strict;
 
 use parent 'Plack::Middleware::Session';
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub commit {
     my($self, $env) = @_;

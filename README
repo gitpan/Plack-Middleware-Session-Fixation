@@ -1,28 +1,10 @@
 Plack-Middleware-Session-Fixation version 0.01
 
-Catalyst::Plugin::Session's change_session_id method import
+Session Fixation対策として、ログイン処理後SessionIDの変更を可能に
+Catalyst::Plugin::Session の change_session_id に相当します
 
-INSTALLATION
-
-To install this module, run the following commands:
-
-	perl Makefile.PL
-	make
-	make test
-	make install
-
-Alternatively, to install with Module::Build, you can use the following commands:
-
-	perl Build.PL
-	./Build
-	./Build test
-	./Build install
-
-
-DEPENDENCIES
-
-None.
-
+- http://www.ipa.go.jp/security/vuln/documents/website_security.pdf (Japanese)
+- http://www.ipa.go.jp/security/vuln/documents/website_security_en.pdf (English)
 
 COPYRIGHT AND LICENCE
 

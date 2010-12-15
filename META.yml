@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Plack-Middleware-Session-Fixation
-version:            0.01
+version:            0.02
 abstract:           Plack::Middleware::Session + fixation block
 author:
     - Shinichiro Aska <s.aska.org@gmail.com>
@@ -11,8 +11,9 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    Test::More:  0
-    version:     0
+    Plack::Middleware::Session:  0
+    Test::More:           0
+    version:              0
 no_index:
     directory:
         - t

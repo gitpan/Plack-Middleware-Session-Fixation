@@ -9,8 +9,9 @@ WriteMakefile(
     ABSTRACT_FROM       => 'lib/Plack/Middleware/Session/Fixation.pm',
     PL_FILES            => {},
     PREREQ_PM => {
-        'Test::More' => 0,
-        'version'    => 0,
+        'Plack::Middleware::Session' => 0,
+        'Test::More'                 => 0,
+        'version'                    => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Plack-Middleware-Session-Fixation-*' },
